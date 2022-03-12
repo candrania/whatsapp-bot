@@ -50,11 +50,11 @@ Asena.addCommand(
 Asena.addCommand(
   { pattern: "help ?(.*)", fromMe: true, dontAddCommandList: true },
   async (message, match) => {
-    let CMD_HELP = `╭────────────────╮
-    ᴡʜᴀᴛsᴀᴘᴘ-ʙᴏᴛ
-╰────────────────╯
+    let CMD_HELP = `╭──────────────────╮
+     𝙎𝙮𝙡𝙫𝙚𝙨𝙩𝙚𝙧 ➬ 𝘼𝙨𝙨𝙞𝙨𝙩𝙖𝙣𝙩-𝘽𝙤𝙩
+╰──────────────────╯
 
-╭────────────────
+┌❑  ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ❑
 `
     let commands = []
     Asena.commands.map(async (command, index) => {
@@ -73,7 +73,7 @@ Asena.addCommand(
         commands.length
       )}${textToStylist(command.toUpperCase(), "mono")}\n`
     })
-    CMD_HELP += `╰────────────────`
+    CMD_HELP += `└─ ❑ thetechboy3 ─❑`
     return await message.sendMessage("```" + CMD_HELP + "```")
   }
 )
